@@ -1,0 +1,202 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    background-color: teal;
+}
+
+#container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#side {
+    background-color: #52575F;
+    width: 25%;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#content
+{
+    background-color: inherit;
+    height: 100%;
+    position: relative;
+    margin-left: 25%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.title_box
+{
+    background-color: blue;
+    color: white;
+    padding: 0;
+    margin: 2px;
+}
+
+.title_box h1
+{
+    padding: 0;
+    margin: 0;
+}
+
+.content_box
+{
+    background-color: #52575F;
+    width: inherit;
+    box-sizing: border-box;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+.content_space
+{
+    background-color: white;
+    width: inherit;
+    box-sizing: border-box;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.icon
+{
+    background-color: inherit;
+    max-width: 220px;
+    max-height: 220px;
+    text-align: center;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+#dp
+{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+#profpic
+{
+    max-height: 200px;
+    max-width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 3px solid black;
+}
+
+.connect
+{
+    background-color: inherit;
+    box-sizing: border-box;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1.75%;
+    margin: 2px;
+}
+
+.connect:active
+{
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}
+
+.links
+{
+    text-decoration: none;
+    color: black;
+}
+
+.line
+{
+    border-top: 0.5px solid black;
+    border-left: 0.5px solid black;
+    border-bottom: 0.5px solid white;
+    border-right: 0.5px solid white;
+    width: 90%
+}
+
+.skill_container
+{
+    height: 30px;
+    width: 95%;
+    background-color: #747880;
+    border: 0.5 solid black;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.bar
+{
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: white;
+    width: 0;
+    height: 26px;
+    background-color: blue;
+}
+
+@media (max-width: 1024px)
+{
+    #container
+    {
+        flex-direction: column;
+    }
+    #side
+    {
+        width: 100%;
+        position: relative;
+    }
+    #content
+    {
+        width: 100%;
+        margin-left: 0%;
+        left: 0;
+    }
+    .content_box
+    {
+        margin-left: 0%;
+    }
+}
