@@ -110,6 +110,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     width: 100%;
     height: 100%;
     overflow-y: auto;
@@ -132,6 +133,7 @@ h2{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    align-content: space-around;
     overflow: auto;
     animation: fadeIN 0.4s;
     -webkit-animation: fadeIN 0.4s;
@@ -294,6 +296,364 @@ h3{
 /****************************************************************************************************************************Education*/
 
 
+/*****************************************************************************************************************************Skill*/
+.skillCont{
+    width: 90%;
+    display: block;
+    overflow-y: scroll;
+}
+
+.skillCont::-webkit-scrollbar{
+    display: none;
+}
+
+.skillList{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    margin: auto;
+    margin-bottom: 3%;
+}
+
+.skillDetails{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    font-size: 14px;
+    color: #000000;
+    margin: auto;
+}
+
+.skillBar{
+    position: relative;
+    border: 0px solid #000000;
+    border-radius: 20px;
+}
+
+.skillBar div{
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FF5F1F;
+    box-shadow: 1px 1px 2px #000000;
+}
+
+#cpp{
+    animation: cppFill 4s forwards;
+}
+
+@keyframes cppFill{
+    100%{
+        width: 87%;
+        background-color: #1E90FF;
+    }
+    75%{
+        background-color: #39FF14;
+    }
+    50%{
+        background-color: #FFBF00;
+    }
+    25%{
+        background-color: #FF3131;
+    }
+}
+
+#html{
+    animation: htmlFill 4s forwards;
+}
+
+@keyframes htmlFill{
+    100%{
+        width: 95%;
+        background-color: #1E90FF;
+    }
+    75%{
+        background-color: #39FF14;
+    }
+    50%{
+        background-color: #FFBF00;
+    }
+    25%{
+        background-color: #FF3131;
+    }
+}
+
+#css{
+    animation: cssFill 4s forwards;
+}
+
+@keyframes cssFill{
+    100%{
+        width: 90%;
+        background-color: #1E90FF;
+    }
+    75%{
+        background-color: #39FF14;
+    }
+    50%{
+        background-color: #FFBF00;
+    }
+    25%{
+        background-color: #FF3131;
+    }
+}
+
+#js{
+    animation: jsFill 3s forwards;
+}
+
+@keyframes jsFill{
+    100%{
+        width: 75%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
+    }
+}
+
+#inkscape{
+    animation: inkFill 4s forwards;
+}
+
+@keyframes inkFill{
+    100%{
+        width: 85%;
+        background-color: #1E90FF;
+    }
+    75%{
+        background-color: #39FF14;
+    }
+    50%{
+        background-color: #FFBF00;
+    }
+    25%{
+        background-color: #FF3131;
+    }
+}
+
+#figma{
+    animation: figFill 3s forwards;
+}
+
+@keyframes figFill{
+    100%{
+        width: 60%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
+    }
+}
+
+#unreal{
+    animation: ueFill 2s forwards;
+}
+
+@keyframes ueFill{
+    100%{
+        width: 30%;
+        background-color: #FFBF00;
+    }
+    50%{
+        background-color: #FF3131;
+    }
+}
+
+#git{
+    animation: gitFill 3s forwards;
+}
+
+@keyframes gitFill{
+    100%{
+        width: 60%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
+    }
+}
+
+#jQ{
+    animation: jQFill 1s forwards;
+}
+
+@keyframes jQFill{
+    100%{
+        width: 10%;
+    }
+}
+
+#sass{
+    animation: sassFill 1s forwards;
+}
+
+@keyframes sassFill{
+    100%{
+        width: 10%;
+    }
+}
+
+#react{
+    animation: reactFill 1s forwards;
+}
+
+@keyframes reactFill{
+    100%{
+        width: 5%;
+    }
+}
+
+#redux{
+    animation: reduxFill 1s forwards;
+}
+
+@keyframes reduxFill{
+    100%{
+        width: 5%;
+    }
+}
+
+#sql{
+    animation: sqlFill 1s forwards;
+}
+
+@keyframes sqlFill{
+    100%{
+        width: 5%;
+    }
+}
+
+#python{
+    animation: pyFill 2s forwards;
+}
+
+@keyframes pyFill{
+    100%{
+        width: 30%;
+        background-color: #FFBF00;
+    }
+    50%{
+        background-color: #FF3131;
+    }
+}
+
+#java{
+    animation: javaFill 1s forwards;
+}
+
+@keyframes javaFill{
+    100%{
+        width: 25%;
+    }
+}
+
+#shell{
+    animation: shFill 1s forwards;
+}
+
+@keyframes shFill{
+    100%{
+        width: 5%;
+    }
+}
+
+#unix{
+    animation: unixFill 2s forwards;
+}
+
+@keyframes unixFill{
+    100%{
+        width: 45%;
+        background-color: #FFBF00;
+    }
+    50%{
+        background-color: #FF3131;
+    }
+}
+
+#blender{
+    animation: blenFill 3s forwards;
+}
+
+@keyframes blenFill{
+    100%{
+        width: 55%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
+    }
+}
+
+#node{
+    animation: nodeFill 1s forwards;
+}
+
+@keyframes nodeFill{
+    100%{
+        width: 0%;
+    }
+}
+
+#express{
+    animation: expFill 1s forwards;
+}
+
+@keyframes expFill{
+    100%{
+        width: 0%;
+    }
+}
+
+#mongo{
+    animation: mongoFill 1s forwards;
+}
+
+@keyframes mongoFill{
+    100%{
+        width: 0%;
+    }
+}
+
+#c{
+    animation: cFill 3s forwards;
+}
+
+@keyframes cFill{
+    100%{
+        width: 75%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
+    }
+}
+/*****************************************************************************************************************************Skill*/
+
+
 /*****************************************************************************************************************************Projects*/
 .proCard{
     background-color: #FF3131;
@@ -353,7 +713,7 @@ h3{
 
 /****************************************************************************************************************************Interests*/
 .intCard{
-    background-color: #4B0082;
+    background-color: #9400D3;
     height: 400px;
     width: 250px;
     display: flex;
@@ -361,7 +721,7 @@ h3{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    border: 2px solid #4B0082;
+    border: 2px solid #9400D3;
     border-radius: 5px;
     margin: 30px;
 }

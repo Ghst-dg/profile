@@ -1,7 +1,7 @@
 //------------------------------------------------------------------------------------------------------------------------------------//
 
-const mainNeonColor = ['00FFFF', '39FF14', 'F3E600', 'FF5F1F', 'D2042D', 'FF10F0', 'B026FF','FFFFFF']; //blue green yellow orange red pink violet white
-const lightColor = ['1E90FF', '61B33B', 'FFBF00', 'FF5F1F', 'FF3131', '9400D3', '4B0082', '000000']; //blue green yellow orange red pink violet black
+const mainNeonColor = ['00FFFF', '39FF14', 'F3E600', 'FF5F1F', 'D2042D', 'B026FF', 'FF10F0', 'FFFFFF']; //blue green yellow orange red violet pink white
+const lightColor = ['1E90FF', '61B33B', 'FFBF00', 'FF5F1F', 'FF3131', '4B0082', '9400D3', '000000']; //blue green yellow orange red violet pink black
 const mainCardList = ['About Me', 'Education', 'Experience', 'Skills', 'Projects', 'Achievements', 'Interests', 'Profiles'];
 const imageList = ['https://images.pexels.com/photos/4066295/pexels-photo-4066295.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500', //about
                    'https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1', //education
@@ -25,7 +25,6 @@ const styleSheet = document.querySelector('link');
 const bodyTag = document.getElementsByTagName('body')[0];
 
 let count = 0;
-
 
 //-----------------------------------------------------------------------------------------------------------------------------------//
 
@@ -66,6 +65,11 @@ for(let i = 0; i < 8; i++)
             bodyTag.style.overflow = 'visible';
         }
     })
+
+    if(i == 5)
+    {
+        jsCard.style.display = "none";
+    }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////Main Card append and Modal Connection
 

@@ -46,6 +46,70 @@ for(let i = 0; i < 3; i++)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////education modal content
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////skill modal content
+const skillDisplay = document.createElement('div');
+skillDisplay.setAttribute('class', 'skillCont');
+modalContent[3].appendChild(skillDisplay);
+
+const skillList = ["C++", "HTML", "CSS", "Vanilla JS", "Inkscape", "Figma", "Unreal Engine", "Git", "jQuery", "SASS", "React JS", "Redux", "SQL", "Python", "JAVA", "Shell", "UNIX", "Blender", "Node-JS", "Express JS", "MongoDB", "C"];
+const skillCounter = [87, 95, 90, 75, 85, 60, 30, 60, 10, 10, 5, 5, 5, 30, 25, 5, 45, 55, 0, 0, 0, 75 ];
+const skillID = ['cpp', 'html', 'css', 'js', 'inkscape', 'figma', 'unreal', 'git', 'jQ', 'sass', 'react', 'redux', 'sql', 'python', 'java', 'shell', 'unix', 'blender', 'node', 'express', 'mongo', 'c'];
+
+for(let i = 0; i < skillList.length; i++)
+{
+    const skill = document.createElement('div');
+    const details = document.createElement('div');
+    const name = document.createElement('p');
+    const counter = document.createElement('p');
+    const bar = document.createElement('div');
+    const progress = document.createElement('div');
+
+    skill.setAttribute("class", "skillList");
+
+    name.innerText = `${skillList[i]}`;
+    counter.innerText = `${skillCounter[i]}%`;
+    details.setAttribute("class", "skillDetails");
+
+    bar.setAttribute("class", "skillBar");
+    progress.setAttribute("id", `${skillID[i]}`);
+
+    details.appendChild(name);
+    details.appendChild(counter);
+
+    bar.appendChild(progress);
+
+    skill.appendChild(details);
+    skill.appendChild(bar);
+
+    skillDisplay.appendChild(skill);
+
+    if(skillCounter[i] <= 25)
+    {
+        progress.style.backgroundColor = "#FF3131"
+        progress.style.color = "#FF3131"
+    }
+
+    else if(skillCounter[i] <= 50)
+    {
+        progress.style.backgroundColor = "#FFBF00"
+        progress.style.color = "#FFBF00"
+    }
+
+    else if(skillCounter[i] <= 75)
+    {
+        progress.style.backgroundColor = "#39FF14"
+        progress.style.color = "#39FF14"
+    }
+
+    else
+    {
+        progress.style.backgroundColor = "#1E90FF"
+        progress.style.color = "#1E90FF"
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////skill modal content
+
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////project modal content
 const projBack = ['https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
