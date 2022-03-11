@@ -1,0 +1,450 @@
+body{
+    background-color:#111827;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body::-webkit-scrollbar{
+    width: 0;
+}
+/*******************************************************************************************************************************header*/
+#header{
+    width: 100%;
+    color: #FFFFFF;
+}
+
+h1{
+    display: inline;
+    text-shadow: 0 0 10px #FFFFFF;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.darkModeBttn{
+    background-color: #000000;
+    bottom: 50px;
+    right: 50px;
+    width: 60px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    box-shadow: 2px 10px 10px #000000;
+    position: fixed;
+    z-index: 2;
+}
+
+.darkModeBttn:active{
+    box-shadow: 2px 2px 5px #000000;
+    background-color: #090909;
+}
+/*******************************************************************************************************************************header*/
+
+
+/******************************************************************************************************************************content*/
+#content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    background-color: inherit;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid;
+    box-shadow: 0px 0px 25px;
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.card:hover{
+    box-shadow: 0 0 50px;
+}
+
+.cardImage{
+    width: 90%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 3px 3px 5px #000000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cardContent{
+    background-color: #090909;
+    width: 90%;
+    height: 20%;
+    box-shadow: 3px 3px 5px #000000;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.card:active .cardContent{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.card:active .cardImage{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+h2{
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+/******************************************************************************************************************************content*/
+
+
+/****************************************************************************************************************************box-modal*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #000000;
+    background-color: rgba(00, 00, 00, 0.7);
+    top: 0;
+}
+
+.modalContent{
+    height: 75%;
+    width: 75%;
+    position: relative;
+    background-color: #111827;
+    margin: auto;
+    padding: 0;
+    border: 5px solid;
+    box-shadow: 0 0 50px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    overflow: auto;
+    animation: fadeIN 0.4s;
+    -webkit-animation: fadeIN 0.4s;
+}
+
+@keyframes fadeIN{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.modalContent::-webkit-scrollbar{
+    width: 0;
+}
+/****************************************************************************************************************************box-modal*/
+
+
+/*******************************************************************************************************************************footer*/
+#footer{
+    width: 100%;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px #FFFFFF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: inherit;
+}
+/*******************************************************************************************************************************footer*/
+
+
+
+h3{
+    display: inline;
+    font-weight: 300;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+
+.frame{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+/*****************************************************************************************************************************About Me*/
+.abtNav{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.abtDP{
+    background-image: url("ghstdg.png");
+    background-position: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.abtContent{
+    width: 90%;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+}
+/*****************************************************************************************************************************About Me*/
+
+
+/****************************************************************************************************************************Education*/
+.eduCard{
+    background-color: inherit;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #39FF14;
+    box-shadow: 0px 0px 12px #39FF14;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.eduCard:hover{
+    box-shadow: 0 0 50px #39FF14;
+}
+
+.eduCardImage{
+    width: 90%;
+    height: 20%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eduCardContent{
+    background-color: #090909;
+    width: 90%;
+    height: 70%;
+    box-shadow: 2px 2px 4px #000000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 16px;
+}
+
+.eduScoreCircle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #39FF14;
+    box-shadow: 0px 0px 12px #39FF14;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 16px;
+    margin: auto;
+}
+
+.eduCard:active .eduCardContent{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.eduCard:active .eduCardImage{
+    box-shadow: 1px 1px 2px #000000;
+}
+/****************************************************************************************************************************Education*/
+
+
+/*****************************************************************************************************************************Projects*/
+.proCard{
+    background-color: inherit;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D2042D;
+    box-shadow: 0px 0px 12px #D2042D;
+    border-radius: 5px;
+    margin: 30px;
+    text-decoration: none;
+}
+
+.proCard:hover{
+    box-shadow: 0 0 50px #D2042D;
+}
+
+.proCardImage{
+    width: 90%;
+    height: 20%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.proCardContent{
+    background-color: #090909;
+    width: 90%;
+    height: 70%;
+    box-shadow: 2px 2px 4px #000000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.proCard:active .proCardContent{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.proCard:active .proCardImage{
+    box-shadow: 1px 1px 2px #000000;
+}
+/*****************************************************************************************************************************Projects*/
+
+
+/****************************************************************************************************************************Interests*/
+.intCard{
+    background-color: inherit;
+    height: 400px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #B026FF;
+    box-shadow: 0px 0px 12px #B026FF;
+    border-radius: 5px;
+    margin: 30px;
+}
+
+.intCard:hover{
+    box-shadow: 0 0 50px #B026FF;
+}
+
+.intCardImage{
+    width: 90%;
+    height: 70%;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 4px #000000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.intCardContent{
+    background-color: #090909;
+    width: 90%;
+    height: 20%;
+    box-shadow: 2px 2px 4px #000000;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intCard:active .intCardContent{
+    box-shadow: 1px 1px 2px #000000;
+}
+
+.intCard:active .intCardImage{
+    box-shadow: 1px 1px 2px #000000;
+}
+/****************************************************************************************************************************Interests*/
+
+
+/*****************************************************************************************************************************Profiles*/
+.profBox{
+    background-color:#FFFFFF;
+    height: 200px;
+    width: 125px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 4px #000000;
+    border-radius: 5px;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+}
+
+.profBox:active{
+    background-color: #BFBFBF;
+    box-shadow: 1px 1px 2px #000000;
+}
+/*****************************************************************************************************************************Profiles*/
