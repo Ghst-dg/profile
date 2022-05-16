@@ -51,9 +51,9 @@ const skillDisplay = document.createElement('div');
 skillDisplay.setAttribute('class', 'skillCont');
 modalContent[3].appendChild(skillDisplay);
 
-const skillList = ["C++", "HTML", "CSS", "Vanilla JS", "Inkscape", "Figma", "Unreal Engine", "Git", "jQuery", "SASS", "React JS", "Redux", "SQL", "Python", "JAVA", "Shell", "UNIX", "Blender", "Node-JS", "Express JS", "MongoDB", "C"];
-const skillCounter = [87, 95, 90, 75, 85, 60, 30, 60, 10, 10, 5, 5, 5, 30, 25, 5, 45, 55, 0, 0, 0, 75 ];
-const skillID = ['cpp', 'html', 'css', 'js', 'inkscape', 'figma', 'unreal', 'git', 'jQ', 'sass', 'react', 'redux', 'sql', 'python', 'java', 'shell', 'unix', 'blender', 'node', 'express', 'mongo', 'c'];
+const skillList = ["C++", "HTML", "CSS", "Vanilla JS", "Inkscape", "Figma", "Unreal Engine", "Git", "jQuery", "SASS", "React JS", "Vue JS", "SQL", "Python", "JAVA", "Shell", "UNIX", "Blender", "Node-JS", "C"];
+const skillCounter = [87, 95, 90, 75, 85, 60, 30, 60, 40, 90, 70, 55, 5, 30, 25, 5, 45, 55, 10, 75 ];
+const skillID = ['cpp', 'html', 'css', 'js', 'inkscape', 'figma', 'unreal', 'git', 'jQ', 'sass', 'react', 'vue', 'sql', 'python', 'java', 'shell', 'unix', 'blender', 'node', 'c'];
 
 for(let i = 0; i < skillList.length; i++)
 {
@@ -112,12 +112,14 @@ for(let i = 0; i < skillList.length; i++)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////project modal content
 const projBack = ['https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
-const projLogo = ['cpproj', 'resume'];
-const projTitle = ['PV Template Library', 'Resume Builder'];
-const projLink = ['https://github.com/Ghst-dg/PV_TemplateLibrary', 'https://github.com/Ghst-dg/resumeBuilder'];
+                'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                'https://images.pexels.com/photos/4974912/pexels-photo-4974912.jpeg?cs=srgb&dl=pexels-olia-danilevich-4974912.jpg&fm=jpg',
+                'https://images.pexels.com/photos/251225/pexels-photo-251225.jpeg?cs=srgb&dl=pexels-tranmautritam-251225.jpg&fm=jpg'];
+const projLogo = ['cpproj', 'resume', 'aerometre', 'trb'];
+const projTitle = ['PV Template Library', 'Resume Creator', 'Aerometre', 'The Rumbling Potato'];
+const projLink = ['https://github.com/Ghst-dg/PV_TemplateLibrary', 'https://ghst-dg.github.io/resumecreator/', 'https://ghst-dg.github.io/Aerometre/', ''];
 
-for(let i = 0; i < 2; i++)
+for(let i = 0; i < 4; i++)
 {
     const projCard = document.createElement('a');
     const projBackground = document.createElement('div');
@@ -150,11 +152,13 @@ for(let i = 0; i < 2; i++)
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////interest modal content
 const intBack = ['https://images.pexels.com/photos/3361471/pexels-photo-3361471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
                 'https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-                'https://images.pexels.com/photos/4009398/pexels-photo-4009398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'];
+                'https://images.pexels.com/photos/4009398/pexels-photo-4009398.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
+                'https://images.pexels.com/photos/2707010/pexels-photo-2707010.jpeg?cs=srgb&dl=pexels-chevanon-photography-2707010.jpg&fm=jpg',
+                ];
 
-const inter = ['Football', 'Video Games', 'Movies'];
+const inter = ['Football', 'Video Games', 'Movies', 'Fish Keeping'];
 
-for(let i = 0; i < 3; i++)
+for(let i = 0; i < 4; i++)
 {
     const intCard = document.createElement('div');
     const intBackground = document.createElement('div');

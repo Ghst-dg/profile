@@ -501,42 +501,70 @@ h3{
 }
 
 #jQ{
-    animation: jQFill 1s forwards;
+    animation: jQFill 2s forwards;
 }
 
 @keyframes jQFill{
     100%{
-        width: 10%;
+        width: 40%;
+        background-color: #FFBF00;
+    }
+    50%{
+        background-color: #FF3131;
     }
 }
 
 #sass{
-    animation: sassFill 1s forwards;
+    animation: sassFill 4s forwards;
 }
 
 @keyframes sassFill{
     100%{
-        width: 10%;
+        width: 90%;
+        background-color: #1E90FF;
+    }
+    75%{
+        background-color: #39FF14;
+    }
+    50%{
+        background-color: #FFBF00;
+    }
+    25%{
+        background-color: #FF3131;
     }
 }
 
 #react{
-    animation: reactFill 1s forwards;
+    animation: reactFill 3s forwards;
 }
 
 @keyframes reactFill{
     100%{
-        width: 5%;
+        width: 70%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
     }
 }
 
-#redux{
-    animation: reduxFill 1s forwards;
+#vue{
+    animation: vueFill 3s forwards;
 }
 
-@keyframes reduxFill{
+@keyframes vueFill{
     100%{
-        width: 5%;
+        width: 55%;
+        background-color: #39FF14;
+    }
+    66%{
+        background-color: #FFBF00;
+    }
+    33%{
+        background-color: #FF3131;
     }
 }
 
@@ -621,7 +649,8 @@ h3{
 
 @keyframes nodeFill{
     100%{
-        width: 0%;
+        width: 10%;
+        background-color: #FF3131;
     }
 }
 
